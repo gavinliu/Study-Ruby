@@ -47,6 +47,9 @@ end
 Foo::Bar.say
 Foo::Car.new.hello
 
+
+# module的特殊用法singleton:
+
 module Item
   extend self
 

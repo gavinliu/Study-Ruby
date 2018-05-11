@@ -64,3 +64,9 @@ def hello(x)
 end
 
 hello('Hello') { puts 'hello, block' }
+
+def hello &block
+  block.call
+end
+
+hello {puts "hello, block"}
